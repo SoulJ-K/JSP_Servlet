@@ -10,10 +10,10 @@
 <body>
 	<%-- <c:if test="${ param.num1 > param.num2}">
 		${param.num1 } 크다, ${param.num2 } 보다
-	</c:if>
-	<c:if test="${param.num2 > param.num1 }"> 
-		${param.num2 } 크다, ${param.num1 } 보다
-	</c:if>
+		</c:if>
+		<c:if test="${param.num2 > param.num1 }"> 
+			${param.num2 } 크다, ${param.num1 } 보다
+		</c:if>
 	 --%>
 	 <!-- parameter로 받아오면 string으로 받아오게되므로 형변환 필요 -->
 	<br><br>
