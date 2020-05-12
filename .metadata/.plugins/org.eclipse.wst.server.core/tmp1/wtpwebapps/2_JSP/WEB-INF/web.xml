@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>2_JSP</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+
+<servlet>  <!-- 서블릿에 대한 정보 넣는 곳 -->
+  	<servlet-name>pizza</servlet-name>  <!-- servlet-name : 구분자 역할 -->
+  	<servlet-class>com.kh.pizza</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <!-- url이 들어왔을 때 정보를 넣고 연결시켜주는 것 -->
+  <servlet-name>pizza</servlet-name>
+  <url-pattern>/pizza.do</url-pattern>
+  <!-- url을 통해 testServlet1.do라는 요청이 들어왔을 때  TestServlet1과 연결시키고   com.kh.servlet.TestServlet1에서 실행시킴-->
+  </servlet-mapping>
+  
+  </web-app>
